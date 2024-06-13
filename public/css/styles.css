@@ -1,0 +1,1751 @@
+*,html,body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Add a black background color to the top navigation */
+  .topnav {
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    display: flex;
+    margin-top: 0px;
+    }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a{
+    float: left;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .topnav .username{
+    float: right;
+    margin-left: 90px;
+    margin-top: 15px;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+  
+  /* Logo styles */
+  .topnav .logo {
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-right: 30px;
+  }
+  
+  .topnav .logo img {
+    max-width: 100%; /* Set the maximum width to fit the container */
+    max-block-size: 30px;
+  }
+  
+  .topnav .search{
+    float: right;
+  }
+  
+  /* Style the search box inside the navigation bar */
+  .topnav .search input[type=text] {
+    padding: 6px;
+    border: 1px solid rgb(0, 0, 0);
+    margin-top: 8px;
+    margin-left: 400px;
+    font-size: 17px;
+  }
+  
+  .topnav .search button{
+    float: right;
+    padding: 7px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .topnav .search button:hover{
+    background: #ccc;
+  }
+  
+  /* -------------------- Team Overview -------------------------------------------------------------------------------- */
+  
+  .upper{
+  display: flex;
+  }
+  
+  .teamcontainer{
+  background-color: black;
+  height: 230px;
+  display: flex;
+  }
+  
+  .teamcontainer .resizable-image{
+    block-size: 150px;
+    margin-top: 33px;
+    margin-left: 100px;
+    background-color: rgb(138, 138, 138);
+    display: flex;
+  }
+  
+  .teamcontainer .clubdetail{
+    width: 100%;
+    float: left;
+    margin-left: 50px;
+    margin-top: 70px;
+  }
+  
+  .teamcontainer h1{
+    color: white;
+    font-family: 'Segoe UI';
+    }
+  
+  .teamcontainer h2{
+    color: white;
+    font-family: 'Segoe UI';
+    }
+  
+  .card_upcomingmatch{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    border-radius: 5px;
+    float: left;
+    margin-top: 100px;
+    margin-left: 150px;
+  }
+  
+  .card_upcomingmatch .title1_container, 
+  .card_lastmatch .title2_container,
+  .card_currentform .title3_container,
+  .card_yearperformance .title4_container {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  
+  .card_upcomingmatch .title1_container h4, 
+  .card_lastmatch .title2_container h4,
+  .card_currentform .title3_container h4,
+  .card_yearperformance .title4_container h4 {
+    font-size: 20px;
+  }
+  
+  .card_upcomingmatch .home{
+    float: left;
+    block-size: 100px;
+    margin-top: 33px;
+    margin-left: 100px;
+    display: flex;
+  }
+  
+  .card_upcomingmatch .vs{
+    float: left;
+    display: flex;
+    margin-left: 80px;
+    margin-top: 70px;
+    font-size: 20px;
+  }
+  
+  .card_upcomingmatch .away{
+    float: left;
+    block-size: 150px;
+    margin-top: 8px;
+    margin-left: 50px;
+    display: flex;
+  }
+  
+  
+  .card_lastmatch{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+  border-radius: 5px;
+  margin-top: 100px;
+  margin-left: 50px;
+  }
+  
+  .card_lastmatch .away{
+    block-size: 100px;
+    margin-top: 33px;
+    margin-left: 80px;
+  }
+  
+  .card_lastmatch .awayname{
+    margin-top: 70px;
+    font-size: 20px;
+  }
+  
+  .card_lastmatch .result{
+    margin-top: 35px;
+    margin-left: 50px;
+    font-size: 80px;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  
+  
+  .card_currentform{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+  border-radius: 5px;
+  float: left;
+  margin-top: 50px;
+  margin-left: 150px;
+  }
+  
+  .card_currentform .win1, .draw1, .lose1, .win2, .win3{
+    block-size: 60px;
+    margin-top: 50px;
+    margin-bottom: 33px;
+    margin-left: 30px;
+  }
+  
+  .formcontainer {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+  }
+  
+  .card_yearperformance{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+  border-radius: 5px;
+  float: left;
+  margin-top: 50px;
+  margin-left: 50px;
+  } 
+  
+  .performancecontainer{
+    grid-template-columns: auto auto auto auto auto auto;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 23px;
+    margin-bottom: 24px;
+    font-size: 40px;
+  }
+  
+  
+  /* -------------------- Squad -------------------------------------------------------------------------------- */
+  
+  .squadlist, .playerprofile{
+  margin-top: 50px;
+  }
+  
+  .squadlist{
+  width: 50%;
+  float: left;
+  height: auto;
+  }
+  
+  .squadlist .card_squad1, .goleiro, 
+  .card_squad2, .fixo, 
+  .card_squad3, .card_squad4, .ala,
+  .card_squad5, .pivot{
+    margin-left: 25%;
+    margin-bottom: 2%;
+  }
+  
+  .squadlist .card_squad1, .card_squad2,
+  .card_squad4, .card_squad5{
+    margin-bottom: 50px;
+  }
+  
+  .squadlist .gk1{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 65%;
+    grid-template-columns: auto auto;
+  }
+  
+  .squadlist .gk1 .gk1_num{
+    grid-row: 1 / 3;
+    grid-column: 2 / 3;
+    text-align: right;
+    margin-right: 40px;
+    font-size: 80px;
+  }
+  
+  .squadlist .gk1 .gk1_name{
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+  }
+  
+  .squadlist .gk1 .gk1_loc{
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+  }
+  
+  .squadlist .gk1 .gk1_name{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+  
+  .squadlist .gk1 .gk1_loc{
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+  
+  .squadlist .fix1{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 65%;
+    grid-template-columns: auto auto;
+  }
+  
+  .squadlist .fix1 .fix1_num{
+    grid-row: 1 / 3;
+    grid-column: 2 / 3;
+    text-align: right;
+    margin-right: 40px;
+    font-size: 80px;
+  }
+  
+  .squadlist .fix1 .fix1_name{
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+  }
+  
+  .squadlist .fix1 .fix1_loc{
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+  }
+  
+  .squadlist .fix1 .fix1_name{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+  
+  .squadlist .fix1 .fix1_loc{
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+  
+  .squadlist .ala1{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 65%;
+    grid-template-columns: auto auto;
+  }
+  
+  .squadlist .ala1 .ala1_num{
+    grid-row: 1 / 3;
+    grid-column: 2 / 3;
+    text-align: right;
+    margin-right: 40px;
+    font-size: 80px;
+  }
+  
+  .squadlist .ala1 .ala1_name{
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+  }
+  
+  .squadlist .ala1 .ala1_loc{
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+  }
+  
+  .squadlist .ala1 .ala1_name{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+  
+  .squadlist .ala1 .ala1_loc{
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+  
+  .squadlist .ala2{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 65%;
+    grid-template-columns: auto auto;
+  }
+  
+  .squadlist .ala2 .ala2_num{
+    grid-row: 1 / 3;
+    grid-column: 2 / 3;
+    text-align: right;
+    margin-right: 40px;
+    font-size: 80px;
+  }
+  
+  .squadlist .ala2 .ala2_name{
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+  }
+  
+  .squadlist .ala2 .ala2_loc{
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+  }
+  
+  .squadlist .ala2 .ala2_name{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+  
+  .squadlist .ala2 .ala2_loc{
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+  
+  .squadlist .piv1{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 65%;
+    grid-template-columns: auto auto;
+  }
+  
+  .squadlist .piv1 .piv1_num{
+    grid-row: 1 / 3;
+    grid-column: 2 / 3;
+    text-align: right;
+    margin-right: 40px;
+    font-size: 80px;
+  }
+  
+  .squadlist .piv1 .piv1_name{
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+  }
+  
+  .squadlist .piv1 .piv1_loc{
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+  }
+  
+  .squadlist .piv1 .piv1_name{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+  
+  .squadlist .piv1 .piv1_loc{
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+  
+  .playerprofile{
+    width: 40%;
+    float: right;
+    margin-right: 10%;
+    margin-bottom: auto;
+    background-color: bisque;
+    border: solid 3px black;
+  }
+  
+  .playerprofile .playerpic{
+    display: block;
+    block-size: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    margin-top: 25px;
+  }
+  
+  .playerprofile .desctitle{
+    margin-top: 50px;
+    margin-bottom: 25px;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+  
+  .playerprofile .desc{
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+  
+  .playerprofile .grid-container{
+    grid-template-columns: auto auto;
+  }
+  
+  .playerprofile .grid-container .dname1{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin-bottom: 10px;
+  }
+  
+  .playerprofile .grid-container .dname2{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    margin-bottom: 10px;
+  }
+  
+  .playerprofile .grid-container .dnum1{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    margin-bottom: 10px;
+  }
+  
+  .playerprofile .grid-container .dnum2{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    margin-bottom: 10px;
+  }
+  
+  .playerprofile .grid-container .dbirth1{
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    margin-bottom: 10px;
+  }
+  
+  .playerprofile .grid-container .dbirth2{
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    margin-bottom: 10px;
+  }
+  
+  .playerprofile .grid-container .dstate1{
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    margin-bottom: 10px;
+  }
+  
+  .playerprofile .grid-container .dstate2{
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    margin-bottom: 10px;
+  }
+  
+  .playerprofile .grid-container .dpos1{
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+    margin-bottom: 10px;
+  }
+  
+  .playerprofile .grid-container .dpos2{
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+    margin-bottom: 10px;
+  }
+  
+  .playerprofile .grid-container .dcon1{
+    grid-column: 1 / 2;
+    grid-row: 6 / 7;
+    margin-bottom: 10px;
+  }
+  
+  .playerprofile .grid-container .dcon2{
+    grid-column: 2 / 3;
+    grid-row: 6 / 7;
+    margin-bottom: 10px;
+  }
+  
+  /* -------------------- Schedule -------------------------------------------------------------------------------- */
+  
+  .btnadd .button{
+  background-color: #ffd992; /* Green */
+  border: none;
+  border-radius: 5px;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  margin-top: 2%;
+  margin-left: 5%;
+  }
+  
+  .button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  
+  .months{
+  margin: 0 5%;
+  }
+  
+  /* .month .april1_details {
+  float: right;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  width: 40%;
+  height: 20%;
+  grid-template-columns: auto;
+  } */
+  
+    .months .card-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 5px 0px;
+      margin: 10px 0px 25px;
+    }
+  
+    .months .card-container .card {
+      width: 100%;
+      text-align: center;
+      padding: 50px;
+    }
+  
+    .months .card-container .card h4, .card p {
+      font-size: 25px;
+    }
+  
+    .months .card-container .card:nth-child(2) {
+      border-left: solid 1px #000000;
+      background-color: #ffd992;
+    }
+  
+    .months .month {
+      margin-top: 3%;
+      margin-bottom: 1%;
+      font-size: 30px;
+    }
+  
+  /* -------------------- Results -------------------------------------------------------------------------------- */
+  
+  .allresults {
+    width: 50%;
+    float: left;
+    height: auto;
+    }
+  
+    .allresults .monthresults {
+      margin-left: 25%;
+      margin-bottom: 2%;
+      margin-top: 50px;
+    }
+  
+    .allresults .card-container {
+      margin-left: 25%;
+      margin-bottom: 2%;
+    }
+  
+    .allresults .grid-container{
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      width: 65%;
+      grid-template-columns: auto auto;
+    }
+  
+    .allresults .grid-container .april1_result_result{
+      grid-row: 1 / 3;
+      grid-column: 2 / 3;
+      text-align: right;
+      margin-right: 40px;
+      font-size: 80px;
+    }
+  
+    .allresults .grid-container .april1_result_name{
+      grid-row: 1 / 2;
+      grid-column: 1 / 2;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      margin-left: 20px;
+    }
+  
+    .allresults .grid-container .april1_result_date{
+      grid-row: 2 / 3;
+      grid-column: 1 / 2;
+      margin-bottom: 20px;
+      margin-left: 20px;
+    }
+  
+    .allresults .grid-container .may1_result_result{
+      grid-row: 1 / 3;
+      grid-column: 2 / 3;
+      text-align: right;
+      margin-right: 40px;
+      font-size: 80px;
+    }
+  
+    .allresults .grid-container .may1_result_name{
+      grid-row: 1 / 2;
+      grid-column: 1 / 2;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      margin-left: 20px;
+    }
+  
+    .allresults .grid-container .may1_result_date{
+      grid-row: 2 / 3;
+      grid-column: 1 / 2;
+      margin-bottom: 20px;
+      margin-left: 20px;
+    }
+  
+    .allresults .grid-container .june1_result_result{
+      grid-row: 1 / 3;
+      grid-column: 2 / 3;
+      text-align: right;
+      margin-right: 40px;
+      font-size: 80px;
+    }
+  
+    .allresults .grid-container .june1_result_name{
+      grid-row: 1 / 2;
+      grid-column: 1 / 2;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      margin-left: 20px;
+    }
+  
+    .allresults .grid-container .june1_result_date{
+      grid-row: 2 / 3;
+      grid-column: 1 / 2;
+      margin-bottom: 20px;
+      margin-left: 20px;
+    }
+  
+    .allresults .grid-container .june2_result_result{
+      grid-row: 1 / 3;
+      grid-column: 2 / 3;
+      text-align: right;
+      margin-right: 40px;
+      font-size: 80px;
+    }
+  
+    .allresults .grid-container .june2_result_name{
+      grid-row: 1 / 2;
+      grid-column: 1 / 2;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      margin-left: 20px;
+    }
+  
+    .allresults .grid-container .june2_result_date{
+      grid-row: 2 / 3;
+      grid-column: 1 / 2;
+      margin-bottom: 20px;
+      margin-left: 20px;
+    }
+  
+    .allresults .grid-container .july1_result_result{
+      grid-row: 1 / 3;
+      grid-column: 2 / 3;
+      text-align: right;
+      margin-right: 40px;
+      font-size: 80px;
+    }
+  
+    .allresults .grid-container .july1_result_name{
+      grid-row: 1 / 2;
+      grid-column: 1 / 2;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      margin-left: 20px;
+    }
+  
+    .allresults .grid-container .july1_result_date{
+      grid-row: 2 / 3;
+      grid-column: 1 / 2;
+      margin-bottom: 20px;
+      margin-left: 20px;
+    }
+  
+  
+  .selectedresult {
+    width: 40%;
+    float: right;
+    margin-right: 10%;
+    margin-top: 100px;
+    margin-bottom: auto;
+    background-color: bisque;
+    border: solid 3px black;
+  }
+  
+    .selectedresult .versus {
+      font-size: 30px;
+      text-align: center;
+      margin-top: 25px;
+    }
+  
+    .selectedresult .oppologo {
+      display: block;
+      block-size: 250px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 25px;
+      margin-top: 25px;
+    }
+  
+    .selectedresult .resultdetails {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+  
+    .selectedresult .score {
+      text-align: center;
+      font-size: 100px;
+    }
+  
+    .selectedresult .grid-container {
+      grid-template-columns: auto auto auto auto auto auto auto;
+      column-gap: 10px;
+      row-gap: 10px;
+      margin-bottom: 25px;
+    }
+  
+    .selectedresult .icon_ball1, .icon_ball2, .icon_ball3, .icon_ball4{
+      display: block;
+      block-size: 20px;
+    }
+  
+    .selectedresult .icon_ball1{
+      grid-column: 4 / 5;
+      grid-row: 1 / 2;
+      justify-self: right;
+    }
+  
+    .selectedresult .scorer1 {
+      grid-column: 5 / 6;
+      grid-row: 1 / 2;
+      justify-self: left;
+    }
+  
+    .selectedresult .time1 {
+      grid-column: 6 / 7;
+      grid-row: 1 / 2;
+      justify-self: left;
+    }
+  
+    .selectedresult .icon_ball2{
+      grid-column: 4 / 5;
+      grid-row: 2 / 3;
+      justify-self: right;
+    }
+  
+    .selectedresult .scorer2 {
+      grid-column: 5 / 6;
+      grid-row: 2 / 3;
+      justify-self: left;
+    }
+  
+    .selectedresult .time2 {
+      grid-column: 6 / 7;
+      grid-row: 2 / 3;
+    }
+  
+    .selectedresult .icon_ball3{
+      grid-column: 4 / 5;
+      grid-row: 3 / 4;
+      justify-self: right;
+    }
+  
+    .selectedresult .scorer3 {
+      grid-column: 5 / 6;
+      grid-row: 3 / 4;
+      justify-self: left;
+    }
+  
+    .selectedresult .time3 {
+      grid-column: 6 / 7;
+      grid-row: 3 / 4;
+      justify-self: left;
+    }
+  
+    .selectedresult .icon_ball4{
+      grid-column: 4 / 5;
+      grid-row: 1 / 2;
+      justify-self: left;
+    }
+  
+    .selectedresult .scorer4 {
+      grid-column: 3 / 4;
+      grid-row: 1 / 2;
+      justify-self: right;
+    }
+  
+    .selectedresult .time4 {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      justify-self: right;
+    }
+  
+  /* -------------------- Stats -------------------------------------------------------------------------------- */
+  
+  .statsgoals {
+    width: 50%;
+    float: left;
+    height: auto;
+  }
+  
+    .statsgoals .statstitle {
+      margin-left: 15%;
+      margin-bottom: 2%;
+      margin-top: 50px;
+    }
+  
+    .statsgoals .card-container {
+      margin-left: 15%;
+      margin-bottom: 2%;
+    }
+  
+    .statsgoals .grid-container1 {
+      display: grid;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      width: 80%;
+      grid-template-columns: auto auto;
+    }
+  
+    .statsgoals .playerimg {
+      display: grid;
+      block-size: 150px;
+      grid-column: 2 / 3;
+      grid-row: 1 / 4;
+      justify-self: center;
+      align-self: center;
+      margin: 10px 10px 10px 10px;
+    }
+  
+    .statsgoals .statsnum1 {
+      justify-self: start;
+      align-self: center;
+      margin-left: 15%;
+      margin-top: 5%;
+      font-size: 30px;
+    }
+  
+    .statsgoals .statsname1 {
+      justify-self: start;
+      align-self: center;
+      margin-left: 15%;
+      font-size: 30px;
+    }
+  
+    .statsgoals .statsgoal1 {
+      justify-self: start;
+      align-self: center;
+      margin-left: 15%;
+      font-size: 60px;
+      margin-top: 10px;
+      margin-bottom: 5%;
+      color: rgb(113, 184, 116);
+    }
+  
+    .statsgoals .grid-container2 {
+      display: grid;
+      width: 80%;
+      grid-template-columns: auto auto auto;
+      margin-top: 30px;
+      margin-left: 8%;
+      row-gap: 10px;
+    }
+  
+    .statsgoals .playerpos, .playername, .playerval {
+      margin-bottom: 20px;
+      border-bottom: solid 1px black;
+    }
+  
+    .statsgoals .playerpos, .playerval {
+      justify-self: center;
+    }
+  
+    .statsgoals .playername {
+      justify-self: start;
+    }
+  
+    .statsgoals .statsnum2, .statsnum3, .statsnum4,
+    .statsgoal2, .statsgoal3, .statsgoal4 {
+      justify-self: center;
+    }
+    
+  
+  .statsassists {
+    width: 50%;
+    float: right;
+    height: auto;
+  }
+  
+    .statsassists .statstitle {
+      margin-left: 15%;
+      margin-bottom: 2%;
+      margin-top: 50px;
+    }
+  
+    .statsassists .card-container {
+      margin-left: 15%;
+      margin-bottom: 2%;
+    }
+  
+    .statsassists .grid-container1 {
+      display: grid;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      width: 80%;
+      grid-template-columns: auto auto;
+    }
+  
+    .statsassists .playerimg {
+      display: grid;
+      block-size: 150px;
+      grid-column: 2 / 3;
+      grid-row: 1 / 4;
+      justify-self: center;
+      align-self: center;
+      margin: 10px 10px 10px 10px;
+    }
+  
+    .statsassists .statsnum1 {
+      justify-self: start;
+      align-self: center;
+      margin-left: 15%;
+      margin-top: 5%;
+      font-size: 30px;
+    }
+  
+    .statsassists .statsname1 {
+      justify-self: start;
+      align-self: center;
+      margin-left: 15%;
+      font-size: 30px;
+    }
+  
+    .statsassists .statsgoal1 {
+      justify-self: start;
+      align-self: center;
+      margin-left: 15%;
+      font-size: 60px;
+      margin-top: 10px;
+      margin-bottom: 5%;
+      color: rgb(113, 184, 116);
+    }
+  
+    .statsassists .grid-container2 {
+      display: grid;
+      width: 80%;
+      grid-template-columns: auto auto auto;
+      margin-top: 30px;
+      margin-left: 8%;
+      row-gap: 10px;
+    }
+  
+    .statsassists .playerpos, .playername, .playerval {
+      margin-bottom: 20px;
+      border-bottom: solid 1px black;
+    }
+  
+    .statsassists .playerpos, .playerval {
+      justify-self: center;
+    }
+  
+    .statsassists .playername {
+      justify-self: start;
+    }
+  
+    .statsassists .statsnum2, .statsnum3, .statsnum4,
+    .statsgoal2, .statsgoal3, .statsgoal4 {
+      justify-self: center;
+    }
+  
+/* -------------------- Login -------------------------------------------------------------------------------- */
+
+.loginform .modal-content .logintitle{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Full-width input fields */
+.loginform input[type=email], .loginform input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.loginform button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.loginform button:hover {
+  opacity: 0.8;
+}
+
+/* Center the image and position the close button */
+.loginform .imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+  .loginform img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+
+.loginform .container {
+  padding: 16px;
+}
+
+  .loginform .container2 .psw {
+    float: right;
+  }
+
+/* The Modal (background) */
+.loginform .modal {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.loginform .modal-content {
+  background-color: #fefefe;
+  margin: 5% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 30%; /* Could be more or less, depending on screen size */
+  border-radius: 8px;
+}
+
+/* -------------------- Register -------------------------------------------------------------------------------- */
+
+.registerform .modal-content .registertitle{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.registerform .imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+  .registerform img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+
+/* Full-width input fields */
+.registerform input[type=text], input[type=password], input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Add a background color when the inputs get focus */
+.registerform input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+.registerform button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerform button:hover {
+  opacity:1;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.registerform .signupbtn {
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.registerform .container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.registerform .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.registerform .modal-content {
+  background-color: #fefefe;
+  margin: 5% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 30%; /* Could be more or less, depending on screen size */
+  border-radius: 8px;
+}
+ 
+/* Clear floats */
+.registerform .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* -------------------- Forgot Password -------------------------------------------------------------------------------- */
+
+.forgotpassform .modal-content .forgotpasstitle{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Full-width input fields */
+.forgotpassform input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.forgotpassform button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.forgotpassform button:hover {
+  opacity: 0.8;
+}
+
+/* Center the image and position the close button */
+.forgotpassform .imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+  .forgotpassform img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+
+.forgotpassform .container {
+  padding: 16px;
+}
+
+  .forgotpassform .container2 .psw {
+    float: left;
+  }
+
+/* The Modal (background) */
+.forgotpassform .modal {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.forgotpassform .modal-content {
+  background-color: #fefefe;
+  margin: 5% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 30%; /* Could be more or less, depending on screen size */
+  border-radius: 8px;
+}
+  
+/* -------------------- Profile -------------------------------------------------------------------------------- */
+
+.userprofile{
+  margin-top: 50px;
+  width: 20%;
+  float: left;
+  margin-left: 20%;
+  margin-bottom: 50px;
+  background-color: bisque;
+  border: solid 3px black;
+}
+
+.userprofile hr {
+  background-color: #000000;
+}
+
+.userprofile .playerpic{
+  display: block;
+  block-size: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.userprofile .desctitle{
+  margin-top: 50px;
+  margin-bottom: 25px;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.userprofile .desc{
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.userprofile .grid-container{
+  grid-template-columns: auto;
+}
+
+.userprofile .grid-container 
+.dname2, .dnum2, .dbirth2, .dstate2, .dpos2 {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.career {
+  float: right;
+  width: 50%;
+}
+
+  .career .card_career1 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 50%;
+    margin-top: 150px;
+    padding: 10px;
+  }
+
+  .career .card_career1 .grid-container { 
+    grid-template-columns: auto auto;
+    row-gap: 20px;
+  }
+
+  .career .card_career1 .overallcareer {
+    margin-left: 10px;
+    margin-bottom: 30px;
+  }
+ 
+  .career .card_career1 .overallcareer h3{
+    font-size: 20px;
+  }
+  
+  .career .card_career1 .grid-container 
+  .matches2, .goals2, 
+  .assists2, .currentteam2 {
+    justify-self: end;
+    margin-right: 5%;
+  }
+
+  .career .card_career1 .grid-container 
+  .matches1, .goals1, 
+  .assists1, .currentteam1 {
+    justify-self: start;
+    margin-left: 5%;
+  }
+
+  .career .card_career2 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 50%;
+    margin-top: 50px;
+    padding: 10px;
+  }
+
+  .career .card_career2 .grid-container { 
+    grid-template-columns: auto auto;
+    row-gap: 20px;
+  }
+
+  .career .card_career2 .yearcareer {
+    margin-left: 10px;
+    margin-bottom: 30px;
+  }
+
+  .career .yearcareer {
+    margin-top: 10px;
+  }
+ 
+  .career .card_career2 .yearcareer h3{
+    font-size: 20px;
+  }
+  
+  .career .card_career2 .grid-container 
+  .matches2, .goals2, 
+  .assists2, .currentteam2 {
+    justify-self: end;
+    margin-right: 5%;
+  }
+
+  .career .card_career2 .grid-container 
+  .matches1, .goals1, 
+  .assists1, .currentteam1 {
+    justify-self: start;
+    margin-left: 5%;
+  }
+
+
+
+/* .userprofile .grid-container .dname1{
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  margin-bottom: 10px;
+}
+
+.userprofile .grid-container .dname2{
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  margin-bottom: 10px;
+}
+
+.userprofile .grid-container .dnum1{
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  margin-bottom: 10px;
+}
+
+.userprofile .grid-container .dnum2{
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  margin-bottom: 10px;
+}
+
+.userprofile .grid-container .dbirth1{
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  margin-bottom: 10px;
+}
+
+.userprofile .grid-container .dbirth2{
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  margin-bottom: 10px;
+}
+
+.userprofile .grid-container .dstate1{
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+  margin-bottom: 10px;
+}
+
+.userprofile .grid-container .dstate2{
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+  margin-bottom: 10px;
+}
+
+.userprofile .grid-container .dpos1{
+  grid-column: 1 / 2;
+  grid-row: 5 / 6;
+  margin-bottom: 10px;
+}
+
+.userprofile .grid-container .dpos2{
+  grid-column: 2 / 3;
+  grid-row: 5 / 6;
+  margin-bottom: 10px;
+}
+
+.userprofile .grid-container .dcon1{
+  grid-column: 1 / 2;
+  grid-row: 6 / 7;
+  margin-bottom: 10px;
+}
+
+.userprofile .grid-container .dcon2{
+  grid-column: 2 / 3;
+  grid-row: 6 / 7;
+  margin-bottom: 10px;
+} */
+
+/* -------------------- Edit Profile -------------------------------------------------------------------------------- */
+
+.editprofileform .modal-content .registertitle{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.editprofileform .imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+  .editprofileform img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+
+/* Full-width input fields */
+.editprofileform input[type=text], input[type=date] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+.editprofileform input[type=text]:focus, input[type=date]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+.editprofileform button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.editprofileform button:hover {
+  opacity:1;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.editprofileform .updatebtn {
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.editprofileform .container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.editprofileform .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.editprofileform .modal-content {
+  background-color: #fefefe;
+  margin: 5% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 30%; /* Could be more or less, depending on screen size */
+  border-radius: 8px;
+}
+ 
+/* Clear floats */
+.editprofileform .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* -------------------- Approve -------------------------------------------------------------------------------- */
+
+
+
+
+/* -------------------- Match -------------------------------------------------------------------------------- */
+
+.matchhometeam {
+  float: left;
+  width: 50%;
+  height: auto;
+  margin-top: 50px;
+}
+
+  .matchhometeam .card_hometeam{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 20%;
+    grid-template-columns: auto auto;
+    margin-left:60%;
+  }
+
+  .matchhometeam .card_homeplayer{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 30%;
+    grid-template-columns: auto auto;
+    margin-left: 55%;
+    padding: 10px;
+  }
+
+.matchawayteam {
+  float: right;
+  width: 50%;
+  height: auto;
+  margin-top: 50px;
+}
+
+  .matchawayteam .card_awayteam {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 20%;
+    grid-template-columns: auto auto;
+    margin-left: 20%;
+  }
+
+  .matchawayteam .card_awayplayer{ 
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 30%;
+    grid-template-columns: auto auto;
+    margin-left: 15%;
+    
+    padding: 10px;
+  }
+
+.matchbutton {
+  margin-left: 37%;
+}
+
+  .matchbutton .button {
+    background-color: #ffd992;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    
+  }
+
+
+
+
+
+
+  
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+  @media screen and (max-width: 600px) {
+  
+    .topnav a:not(:first-child) {
+      display: none;
+    }
+  
+      /* Logo styles */
+    .topnav .logo {
+      float: top;
+      margin-left: 30px;
+      margin-top: 10px;
+      margin-right: 30px;
+    }
+  
+    .topnav .logo img {
+      max-width: 100%; /* Set the maximum width to fit the container */
+      max-block-size: 30px;
+    }
+  
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  
+    .topnav .search input[type=text] {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    .topnav .search input[type=text] {
+      border: 1px solid #ccc;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+    
+  }
+
+  .a-tag-btn {
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    background-color: bisque;
+    box-shadow: 0 0 5px 0 black;
+    color: black;
+    border-radius: 5px;
+  }
+
+  .a-tag-btn:hover {
+    box-shadow: 0 0 10px 0 black;
+  }
+
+  .scorebtn,
+  .assistbtn,
+  .yellowcardbtn,
+  .redcardbtn {
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .scorebtn {
+    background-color: greenyellow;
+  }
+  .assistbtn {
+    background-color: bisque;
+  }
+  .yellowcardbtn {
+    background-color: yellow;
+  }
+  .redcardbtn  {
+    background-color: red;
+    color: white;
+  }
